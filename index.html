@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="Text/css" href="style/st.css">
+    <script src="js/script.js"></script>
+    <title>Котовасия</title>
     <h1>Hello World!</h1>
 </head>
 <body>
@@ -13,5 +15,19 @@
         <div id="thirdDragElement" class="element" draggable="true">Text 3</div>
     </div>
     <div id="target" class="conteiner"></div>   
+
+    <div id="source" class="conteiner" ondragenter="return dragEnter(event)" 
+ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+<div id="firstDragElement" class="element" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">
+Text 1</div>
+<div id="secondDragElement" class="element" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">
+Text 2</div>
+<div id="thirdDragElement" class="element" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">
+Text 3</div>
+</div>
+<div id="target" class="conteiner" ondragenter="return dragEnter(event)" 
+ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+</div>
+
 </body>
 </html>
